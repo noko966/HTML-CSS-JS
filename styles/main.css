@@ -87,8 +87,8 @@ video {
   vertical-align: baseline;
 }
 
-html{
-    font-size: 16px;
+html {
+  font-size: 16px;
 }
 article,
 aside,
@@ -213,41 +213,125 @@ a {
   outline: none;
 }
 
-body{
-    font-family: roboto, sans-serif;
+body {
+  font-family: roboto, sans-serif;
 }
 
 :root {
-  --header-height: 80px;
+  --header-height: 24px;
   --page-top-padding: 80px;
+
+  --bodyBg: #0a0a0a;
+  --bodyBg2: #121212;
+  --bodyTxt: #ffffff;
+  --bodyTxt2: #ccc;
+  --accentBg: #4caf50;
+  --accentTxt: #0a0a0a;
 }
 
-.page{
-        padding-top: var(--header-height);
-        background-color: #1a1a1a;
-        color: #fff;
+html {
+  background-color: var(--bodyBg);
+  color: var(--bodyTxt2);
+  font-size: 16px;
 }
 
-.title{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 24px;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 32px;
+.main {
+  max-width: 1032px;
+  margin: 0 auto;
+  padding: 20px 30px;
 }
 
-
-.paragraph{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 24px;
-    font-size: 16px;
-    line-height: 18px;
+.page {
+  padding-top: var(--header-height);
 }
 
+.title {
+  /* margin-left: 45px;
+  margin-right: 45px; */
+  margin-bottom: 1.2em;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: capitalize;
+  color: var(--bodyTxt);
+  line-height: 1.6;
+}
 
-.img{
-    width: 100%;
-    filter: grayscale(0.6);
+.sub_title {
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: var(--bodyTxt);
+  line-height: 1.6;
+}
+
+.paragraph {
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  /* padding: 20px; */
+  margin-bottom: 28px;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 1.6;
+  /* letter-spacing: 1.2px; */
+  /* text-indent: 12px; */
+}
+
+.list {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 24px;
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 1.5em;
+}
+.list li {
+  list-style: disc;
+  margin-left: 12px;
+  margin-bottom: 24px;
+}
+
+.img {
+  width: 100%;
+  filter: grayscale(0.6);
+  height: auto;
+  border-radius: 10px;
+}
+
+code {
+  display: inline-block;
+  position: relative;
+  border-radius: 6px;
+  font-weight: 700;
+  padding: 1px 5px;
+  line-height: 20px;
+  color: var(--accentTxt);
+  background: var(--accentBg);
+  font-size: 18px;
+  vertical-align: baseline;
+  width: auto;
+  text-align: center;
+  text-indent: 0;
+  font-family: inter;
+  text-transform: none;
+}
+/* 
+li > code {
+  font-size: 1.2rem;
+  line-height: 1.5em;
+} */
+
+li {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: 20px;
+  margin-bottom: 40px;
+  background: var(--bodyBg2);
+  border-radius: 12px;
 }
